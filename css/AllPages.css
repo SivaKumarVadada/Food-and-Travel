@@ -1,0 +1,460 @@
+*::selection
+{
+    color: rgb(0, 34, 2);
+    background: lime;
+}
+body
+{
+    margin: 0px;
+    padding: 0px;
+    background: rgb(0, 21, 0);
+}
+nav
+{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    background: rgb(0, 21, 0);
+    align-items: center;
+    position:fixed;
+    z-index: 100;
+    top: 0vh;
+}
+nav #logo
+{
+    width: 15%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav #logo img
+{
+    width: 30%;
+}
+nav #menu
+{
+    width: 50%;
+    height: 10vh;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+nav #menu button
+{
+    color: lime;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+nav #menu button:hover
+{
+    color: white;
+    border: 2px solid lime;
+    border-width: 0px 0px 2px 0px;
+}
+nav .openMenu
+{
+    display: none;
+}
+.mainContainer
+{
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.mainContainer div
+{
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.mainContainer .mainHead
+{
+    width: 40%;
+}
+.mainContainer .mainItem
+{
+    width: 50%;
+    position: relative;
+    z-index: 1;
+}
+.mainContainer .mainHead h1
+{
+    color: white;
+    font-size: 120px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 18vh;
+    margin-left: 2vw;
+}
+.mainHead b
+{
+    color: lime;
+}
+.mainContainer .mainItem img
+{
+    width: 100%;
+    border-radius: 10px;
+    border-width: 0px;
+    filter:hue-rotate(100px);
+    cursor: pointer;
+    position:relative;
+}
+.mainContainer .mainItem img:nth-child(2)
+{
+    width: 40%;
+    position: absolute;
+    left: 25%;
+    filter:drop-shadow(0px 0px 10px rgba(0, 40, 8, 0.944));
+    transition: 1s;
+}
+.mainContainer .mainItem:hover img:nth-child(2)
+{
+    transform: scale(1.2);
+}
+
+/* second Page */
+.infoContainer
+{
+    width: 95%;
+    height: 98vh;
+    margin-top: 1.5vh;
+    margin-left: 2.3vw;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    position: relative;
+}
+.infoContainer .countryName
+{
+    width: 100%;
+    height: 10vh;
+    background: none;
+    position: absolute;
+    top: 0vh;
+}
+.countryName h1
+{
+    color: lime;
+    font-size: 20px;
+    text-align: center;
+    font-weight: lighter;
+    border: 2px groove lime;
+    border-width: 0px 0px 2px 0px;
+    margin-top:-2vh;
+}
+.countryName h1+p
+{
+    width: 60%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+    letter-spacing: 0.1vw;
+    margin-top:-1vh;
+}
+.infoContainer div
+{
+    width: 30%;
+    height: 56vh;
+    border-radius: 0.3em;
+    background: rgb(38, 44, 38);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20vh;
+    margin-bottom: -15vh;
+} 
+.infoContainer div h2
+{
+    width: 90%;
+    color: white;
+    font-size: 28px;
+    letter-spacing: 0.5vw;
+    text-align: center;
+    margin-top: 2vh;
+}
+.infoContainer div h2+p
+{
+    width: 90%;
+    color: rgb(233, 233, 233);
+    font-size: 14px;
+    font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+    text-align: justify;
+    margin-top: -5vh;
+}
+.infoContainer div img
+{
+    width: 90%;
+    height: 30vh;
+    border: none;
+    border-radius: 0.5em;
+}
+.infoContainer div section
+{
+    width: 90%;
+    background: yellow;
+}
+/* Reiview Page */
+#reviewsContainer div
+{
+    width: 18%;
+    height: 40vh;
+}
+#reviewsContainer .countryName
+{
+    width: 100%;
+    position: absolute;
+    top: -10vh;
+}
+#reviewsContainer .countryName h1+p
+{
+    width: 60%;
+    margin-top: -8vh;
+}
+#reviewsContainer div img
+{
+    width: 60%;
+    height: 24vh;
+    border-radius: 0.5em;
+}
+/*  
+*/
+#contactContainer div
+{
+    width: 24%;
+    height: 30vh;
+    background: none;
+}
+#contactContainer div span
+{
+    color: white;
+    font-size: 16px;
+    font-family:cursive;
+    cursor: pointer;
+}
+#contactContainer div span:hover
+{
+    color: lime;
+}
+#contactContainer section
+{
+    width: 0.1%;
+    height: 20vh;
+    background: gray;
+    margin-top: 35vh;
+}
+#contactContainer .countryName
+{
+    width: 100%;
+    position: absolute;
+    top: -10vh;
+}
+#contactContainer .countryName h1+p
+{
+    width: 60%;
+    margin-top: -8vh;
+}
+@media screen and (max-width: 600px)
+{
+    nav
+    {
+        height: 10vh;
+        position:fixed, relative;
+    }
+    nav #logo img
+    {
+        width: 80%;
+        margin-left: 10vw;
+        margin-top: 1.5vh;
+    }
+    nav #menu
+    {
+        width: 30%;
+        height: 20vh;
+        border-radius: 0.3em;
+        background: rgb(29, 43, 30);
+        flex-direction:column;
+        position: absolute;
+        top: 4vh;
+        right: 20vw;
+        display: none;
+    }
+    nav .openMenu
+    {   
+        display: flex;
+        background: yellow;
+    }
+    button
+    {
+        background: none;
+    }
+    nav .openMenu button
+    {
+        width: 10%;
+        height: 4vh;
+        border: none;
+        background-color: none;
+        background-image: url('../assests/images/menu.png');
+        background-size:100%;
+        background-position: center;
+        position: absolute;
+        right: 8vw;
+        top: 3vh;
+    }
+    .mainContainer
+    {
+        height: 100vh;
+        flex-direction:column-reverse;
+    }
+    .mainContainer .mainItem
+    {
+        width: 100%;
+        height: 70vh;
+        top: 10vh;
+        left: 5vw;
+    }
+    .mainContainer .mainItem img
+    {
+        width: 150%;
+        left: -25vw;
+    }
+    .mainContainer .mainItem img:nth-child(1)
+    {
+        transform: rotateZ(90deg);
+    }
+    .mainContainer .mainItem img:nth-child(2)
+    {
+        width: 50%;
+    }
+    .mainContainer .mainHead
+    {
+        width: 100%;
+        height: 30vh;
+    }
+    .mainContainer .mainHead h1
+    {
+        width: 80%;
+        font-size: 74px;
+        line-height: 8vh;
+        margin-top: 14vh;
+        margin-left: 7vh;
+    }
+    /* info Container */
+    .infoContainer
+    {
+        width: 100%;
+        height: 175vh;
+        flex-direction:column;
+    }
+    .infoContainer .countryName
+    {
+        width: 100%;
+        background: none;
+        position: absolute;
+        top: 15vh;
+    }
+    .countryName h1
+    {
+        margin-top:10vh;
+    }
+    .countryName h1+p
+    {
+        width: 90%;
+        font-size: 18px;
+        text-align: justify;
+        margin-top:-1vh;
+    }
+    .infoContainer div
+    {
+        width: 90%;
+        height: 45vh;
+        margin-top: 0vh;
+        margin-bottom: -10vh;
+    }
+    .infoContainer div img
+    {
+        height: 25vh;
+    }
+    .infoContainer div:nth-child(2)
+    {
+        margin-top: 22vh;
+    }
+    .infoContainer div h2
+    {
+        margin-top: 1vh;
+    }
+    .infoContainer div h2+p
+    {
+        margin-top: -3vh;
+    }
+    /* review Container */
+    #reviewsContainer
+    {
+        height: 215vh;
+    }
+    #reviewsContainer div
+    {
+        width: 90%;
+        height: 35vh;
+    }
+    #reviewsContainer .countryName
+    {
+        width: 100%;
+        position: absolute;
+        top: 10vh;
+    }
+    #reviewsContainer .countryName h1
+    {
+        margin-top: -10vh;
+    }
+    #reviewsContainer .countryName h1+p
+    {
+        width: 80%;
+        margin-top: -12vh;
+    }
+    #reviewsContainer div img
+    {
+        width: 45%;
+        height: 20vh;
+        border-radius: 0.5em;
+    }
+    /* contact COntainer */
+    #contactContainer
+    {
+        height: 40vh;
+        flex-direction: row;
+        margin-bottom: 5vh;
+    }
+    #contactContainer div
+    {
+        width: 24%;
+        height: 10vh;
+        margin-top: 20vh;   
+    }
+    #contactContainer section
+    {
+        height: 10vh;
+        margin-top: 30vh;
+    }
+    #contactContainer .countryName h1+p
+    {
+        width: 90%;
+        margin-top: 0vh;
+    }
+    #contactContainer div span
+    {
+        font-size: 10px;
+    }
+}
